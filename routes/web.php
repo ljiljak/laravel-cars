@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use \App\Http\CarsController;
 
 Route::get('/', function () {
    	$name = 'Aleksandar Ljiljak';
@@ -24,3 +25,5 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/cars', 'CarsController@index');
