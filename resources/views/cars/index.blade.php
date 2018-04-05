@@ -2,7 +2,7 @@
 	<ul>
             @foreach($cars as $car)
                 <li>
-                    {{$car->title}}
+                    <a href={{route('single-car', ['id' => $car->id])}} > {{$car->title}} </a>
                 </li>
             @endforeach
         </ul>
